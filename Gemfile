@@ -10,18 +10,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 
 group :development, :test do
-   gem 'sqlite3' :
+     gem 'sqlite3'
 end
 
 group :production do
- gem 'pg'
- gem 'rails_12factor'
+     gem 'pg'
+     gem 'rails_12factor'
 end
 
-group :development, :test do
+  group :doc do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+  gem 'sdoc', require: false
 end
-
